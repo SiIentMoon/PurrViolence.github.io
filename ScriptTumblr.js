@@ -6,3 +6,22 @@ jQuery(document).ready(function()
 
 });
              
+             
+
+$(function(){
+    //oculta al hacer click fuera del elemnto (formulario)
+    
+    $(document).on("click",function(e) {
+       var container = $(".tagscontent");       
+            if (!container.is(e.target) && container.has(e.target).length === 0) { 
+            //Se ha pulsado en cualquier lado fuera de los elementos contenidos en la variable container
+               container.slideUp();               
+            }
+     });
+
+    //Muestra elento (formulario)
+    $("#onmeuwu").on("click", function(event){
+        $(".tagscontent").slideToggle();
+        event.stopImmediatePropagation();
+    });
+});
