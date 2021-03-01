@@ -7,7 +7,7 @@ jQuery(document).ready(function()
 });
              
 //almacenando el div y el boton en unas variables
-var div = document.getElementById('tagscontent');
+var div = document.getElementByClass('tagscontent');
 var but = document.getElementById('onmeuwu');
 
 //la funcion que oculta y muestra
