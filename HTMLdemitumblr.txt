@@ -1,0 +1,265 @@
+{block:Posts}
+            
+            <!-- POST ESCRITOS -->
+            {block:Text}
+            <div class="postbase">
+            
+            <div class="postitulo">
+            <div class="titulin">{block:Title}<a href="{Permalink}">{Title}</a>{/block:Title}</div>
+            </div>
+            {block:NotReblog}<div class="contenidito">{Body}</div>{/block:NotReblog}
+<!--CORA Y REBLOG--><div class="inferiorsi">
+    <div class="lovesme" title="Love this?"><li class="like-uwu">{LikeButton}<i class="th th-heart-1-o"></i></li></div>
+    <div class="shareme" title="Share this!"><a href="{ReblogURL}"><span class="th th-reblog"></span></a> </div>
+    
+    {block:RebloggedFrom}{block:Reblogs}<div class="moonquienpubl">
+    <div class="quienavatar" style="background-image:url({PortraitURL-128})"></div>
+    <div class="quiennombre"><a href="{PostAuthorURL}">{PostAuthorTitle}</a></div>
+    <div class="informacioncita">
+        {block:HasTags}<div class="infototal info-tags" id="tags1"><span class="th th-link"></span>Tags</div> <div class="tagscontent tagconte1" style="display:none"><div class="hashtagsuwu">{block:Tags}<a href="{TagUrl}">#{Tag}</a>{/block:Tags}</div></div>{/block:HasTags}
+        <div class="infototal info-time"><span class="th th-clock"></span> {block:Date}{ShortMonth} {DayOfMonth} {Year}{/block:Date}</div>
+        <div class="infototal info-notas"><span class="th th-star"></span><a href="{Permalink}">{NoteCount}</a></div>
+    </div>
+    </div>
+    <div class="contenidito">{Body}</div>
+    {/block:Reblogs}{/block:RebloggedFrom}
+</div>
+            
+            </div>
+            {/block:Text}
+                <!-- POST ESCRITOS FIN -->
+                
+                <!-- POST DE FOTOS -->
+                {Block:Photo}
+                <div class="postbase">
+            
+            <div class="postitulo">
+            <div class="titulin">{block:Title}<a href="{Permalink}">{Title}</a>{/block:Title}</div>
+            </div>
+            <div class="contenidito">{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" width="100%"/>{LinkCloseTag} {block:Caption}{Caption}{/block:Caption}</div>
+<!--CORA Y REBLOG--><div class="inferiorsi">
+    <div class="lovesme" title="Love this?"><li class="like-uwu">{LikeButton}<i class="th th-heart-1-o"></i></li></div>
+    <div class="shareme" title="Share this!"><a href="{ReblogURL}"><span class="th th-reblog"></span></a> </div>
+    
+    <div class="moonquienpubl">
+    <div class="quienavatar" style="background-image:url({PortraitURL-128})"></div>
+    <div class="quiennombre"><a href="{PostAuthorURL}">{PostAuthorTitle}</a></div>
+    <div class="informacioncita">
+        {block:HasTags}<div class="infototal info-tags" id="tags2"><span class="th th-link"></span>Tags</div> <div class="tagscontent tagconte2" style="display:none"><div class="hashtagsuwu">{block:Tags}<a href="{TagUrl}">#{Tag}</a>{/block:Tags}</div></div>{/block:HasTags}
+        <div class="infototal info-time"><span class="th th-clock"></span> {block:Date}{ShortMonth} {DayOfMonth} {Year}{/block:Date}</div>
+        <div class="infototal info-notas"><span class="th th-star"></span><a href="{Permalink}">{NoteCount}</a></div>
+    </div>
+    </div>
+    
+</div>
+            
+            </div>{/Block:Photo}
+            
+            <!-- FIN POST DE FOTOS -->
+            
+            <!-- POST DE FOTOS PANORÁMICAS -->
+                {block:Panorama}
+                <div class="postbase">
+            
+            <div class="postitulo">
+            <div class="titulin">{block:Title}<a href="{Permalink}">{Title}</a>{/block:Title}</div>
+            </div>
+            <div class="contenidito">{LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>{LinkCloseTag}{block:Caption}{Caption}{/block:Caption}</div>
+<!--CORA Y REBLOG--><div class="inferiorsi">
+    <div class="lovesme" title="Love this?"><li class="like-uwu">{LikeButton}<i class="th th-heart-1-o"></i></li></div>
+    <div class="shareme" title="Share this!"><a href="{ReblogURL}"><span class="th th-reblog"></span></a> </div>
+    
+    <div class="moonquienpubl">
+    <div class="quienavatar" style="background-image:url({PortraitURL-128})"></div>
+    <div class="quiennombre"><a href="{PostAuthorURL}">{PostAuthorTitle}</a></div>
+    <div class="informacioncita">
+        {block:HasTags}<div class="infototal info-tags" id="tags3"><span class="th th-link"></span>Tags</div> <div class="tagscontent tagconte3" style="display:none"><div class="hashtagsuwu">{block:Tags}<a href="{TagUrl}">#{Tag}</a>{/block:Tags}</div></div>{/block:HasTags}
+        <div class="infototal info-time"><span class="th th-clock"></span> {block:Date}{ShortMonth} {DayOfMonth} {Year}{/block:Date}</div>
+        <div class="infototal info-notas"><span class="th th-star"></span><a href="{Permalink}">{NoteCount}</a></div>
+    </div>
+    </div>
+    
+</div>
+            
+            </div>{/block:Panorama}
+            
+            <!-- FIN POST DE FOTOS PANORAMICAS -->
+            
+            <!-- POST DE FOTOS SET DE FOTOS -->
+                {block:Photoset}
+                <div class="postbase">
+            
+            <div class="postitulo">
+            <div class="titulin">{block:Title}<a href="{Permalink}">{Title}</a>{/block:Title}</div>
+            </div>
+            <div class="contenidito contesetpho">{block:Photos}<img src="{PhotoURL-500}"/>{block:Caption}{Caption}{/block:Caption}{block:Exif}{/block:Exif}{/block:Photos}</div>
+<!--CORA Y REBLOG--><div class="inferiorsi">
+    <div class="lovesme" title="Love this?"><li class="like-uwu">{LikeButton}<i class="th th-heart-1-o"></i></li></div>
+    <div class="shareme" title="Share this!"><a href="{ReblogURL}"><span class="th th-reblog"></span></a> </div>
+    
+    <div class="moonquienpubl">
+    <div class="quienavatar" style="background-image:url({PortraitURL-128})"></div>
+    <div class="quiennombre"><a href="{PostAuthorURL}">{PostAuthorTitle}</a></div>
+    <div class="informacioncita">
+        {block:HasTags}<div class="infototal info-tags" id="tags4"><span class="th th-link"></span>Tags</div> <div class="tagscontent tagconte4" style="display:none"><div class="hashtagsuwu">{block:Tags}<a href="{TagUrl}">#{Tag}</a>{/block:Tags}</div></div>{/block:HasTags}
+        <div class="infototal info-time"><span class="th th-clock"></span> {block:Date}{ShortMonth} {DayOfMonth} {Year}{/block:Date}</div>
+        <div class="infototal info-notas"><span class="th th-star"></span><a href="{Permalink}">{NoteCount}</a></div>
+    </div>
+    </div>
+    
+</div>
+            
+            </div>{/block:Photoset}
+            
+            <!-- FIN POST DE FOTOS SET DE FOTOS -->
+            
+            <!-- POST DE CITACION -->
+            {block:Quote}
+            <div class="postbase">
+            
+            <div class="postitulo">
+            <div class="titulin"><div class="citasbonetas"><span style="color:var(--mooncake)">—</span> {Source}</div></div>
+            </div>
+            <div class="contenidito">{Quote}</div>
+<!--CORA Y REBLOG--><div class="inferiorsi">
+    <div class="lovesme" title="Love this?"><li class="like-uwu">{LikeButton}<i class="th th-heart-1-o"></i></li></div>
+    <div class="shareme" title="Share this!"><a href="{ReblogURL}"><span class="th th-reblog"></span></a> </div>
+    
+    <div class="moonquienpubl">
+    <div class="quienavatar" style="background-image:url({PortraitURL-128})"></div>
+    <div class="quiennombre"><a href="{PostAuthorURL}">{PostAuthorTitle}</a></div>
+    <div class="informacioncita">
+        {block:HasTags}<div class="infototal info-tags" id="tags5"><span class="th th-link"></span>Tags</div> <div class="tagscontent tagconte5" style="display:none"><div class="hashtagsuwu">{block:Tags}<a href="{TagUrl}">#{Tag}</a>{/block:Tags}</div></div>{/block:HasTags}
+        <div class="infototal info-time"><span class="th th-clock"></span> {block:Date}{ShortMonth} {DayOfMonth} {Year}{/block:Date}</div>
+        <div class="infototal info-notas"><span class="th th-star"></span><a href="{Permalink}">{NoteCount}</a></div>
+    </div>
+    </div>
+    
+</div>
+            
+            </div>{/block:Quote}
+            <!-- FIN POST DE CITACION -->
+            
+            <!-- POST DE LINKS -->
+           {block:Link}
+           <div class="postbase">
+            
+            <div class="postitulo">
+            <div class="titulin"><div class="citasbonetas"><span style="color:var(--mooncake)">—</span> ¡Visita este enlace!</div></div>
+            </div>
+            <div class="contenidito"><div class="conte-enlaces">
+      {block:Thumbnail}<div class="fotitoennlace" style="background-image: url({Thumbnail})"><img src="{Thumbnail}" width="100%" /></div>{/block:Thumbnail}
+      <div class="enlacestotality"><div class="enlacenom"><a href="{URL}" class="link" {Target}>{Name}</a></div>
+      </div>
+    </div>
+        {block:Description}{Description}{/block:Description}
+    </div>
+<!--CORA Y REBLOG--><div class="inferiorsi">
+    <div class="lovesme" title="Love this?"><li class="like-uwu">{LikeButton}<i class="th th-heart-1-o"></i></li></div>
+    <div class="shareme" title="Share this!"><a href="{ReblogURL}"><span class="th th-reblog"></span></a> </div>
+    
+    <div class="moonquienpubl">
+    <div class="quienavatar" style="background-image:url({PortraitURL-128})"></div>
+    <div class="quiennombre"><a href="{PostAuthorURL}">{PostAuthorTitle}</a></div>
+    <div class="informacioncita">
+        {block:HasTags}<div class="infototal info-tags" id="tags6"><span class="th th-link"></span>Tags</div> <div class="tagscontent tagconte6" style="display:none"><div class="hashtagsuwu">{block:Tags}<a href="{TagUrl}">#{Tag}</a>{/block:Tags}</div></div>{/block:HasTags}
+        <div class="infototal info-time"><span class="th th-clock"></span> {block:Date}{ShortMonth} {DayOfMonth} {Year}{/block:Date}</div>
+        <div class="infototal info-notas"><span class="th th-star"></span><a href="{Permalink}">{NoteCount}</a></div>
+    </div>
+    </div>
+    
+</div>
+            
+            </div>
+            
+                {/block:Link}
+            <!-- FIN POST DE LINKS -->
+            
+            <!-- POST DE CHAT -->
+            {block:Chat}
+            <div class="postbase">
+            
+            <div class="postitulo">
+            <div class="titulin">{block:Title}<a href="{Permalink}">{Title}</a>{/block:Title}</div>
+            </div>
+            <div class="contenidito">
+             <div class="chatcitos">{block:Lines}<lii class="{Alt} user_{UserNumber}">{block:Label} <span class="label">{Label}</span>{/block:Label}{Line}</lii>{/block:Lines}</div></div>
+<!--CORA Y REBLOG--><div class="inferiorsi">
+    <div class="lovesme" title="Love this?"><li class="like-uwu">{LikeButton}<i class="th th-heart-1-o"></i></li></div>
+    <div class="shareme" title="Share this!"><a href="{ReblogURL}"><span class="th th-reblog"></span></a> </div>
+    
+    <div class="moonquienpubl">
+    <div class="quienavatar" style="background-image:url({PortraitURL-128})"></div>
+    <div class="quiennombre"><a href="{PostAuthorURL}">{PostAuthorTitle}</a></div>
+    <div class="informacioncita">
+        {block:HasTags}<div class="infototal info-tags" id="tags7"><span class="th th-link"></span>Tags</div> <div class="tagscontent tagconte7" style="display:none"><div class="hashtagsuwu">{block:Tags}<a href="{TagUrl}">#{Tag}</a>{/block:Tags}</div></div>{/block:HasTags}
+        <div class="infototal info-time"><span class="th th-clock"></span> {block:Date}{ShortMonth} {DayOfMonth} {Year}{/block:Date}</div>
+        <div class="infototal info-notas"><span class="th th-star"></span><a href="{Permalink}">{NoteCount}</a></div>
+    </div>
+    </div>
+    
+</div>
+            
+            </div>
+                {/block:Chat}
+            <!-- POST DE CHAT FIN -->
+            
+            <!-- POST DE VIDEO -->
+            {block:Video}
+            <div class="postbase">
+            
+            <div class="postitulo">
+            <div class="titulin"></div>
+            </div>
+            <div class="contenidito">{Video-400} {block:Caption}{Caption}{/block:Caption}</div>
+<!--CORA Y REBLOG--><div class="inferiorsi">
+    <div class="lovesme" title="Love this?"><li class="like-uwu">{LikeButton}<i class="th th-heart-1-o"></i></li></div>
+    <div class="shareme" title="Share this!"><a href="{ReblogURL}"><span class="th th-reblog"></span></a> </div>
+    
+    <div class="moonquienpubl">
+    <div class="quienavatar" style="background-image:url({PortraitURL-128})"></div>
+    <div class="quiennombre"><a href="{PostAuthorURL}">{PostAuthorTitle}</a></div>
+    <div class="informacioncita">
+        {block:HasTags}<div class="infototal info-tags" id="tags8"><span class="th th-link"></span>Tags</div> <div class="tagscontent tagconte8" style="display:none"><div class="hashtagsuwu">{block:Tags}<a href="{TagUrl}">#{Tag}</a>{/block:Tags}</div></div>{/block:HasTags}
+        <div class="infototal info-time"><span class="th th-clock"></span> {block:Date}{ShortMonth} {DayOfMonth} {Year}{/block:Date}</div>
+        <div class="infototal info-notas"><span class="th th-star"></span><a href="{Permalink}">{NoteCount}</a></div>
+    </div>
+    </div>
+    
+</div>
+            
+            </div>
+                {/block:Video}
+            <!--POST VIDEO FNI-->
+            <!-- POST DE AUDIO --->
+            {block:Audio}
+            <div class="postbase">
+            
+            <div class="postitulo">
+            <div class="titulin"></div>
+            </div>
+            <div class="contenidito">{AudioEmbed-400}{block:Caption}{Caption}{/block:Caption}</div>
+<!--CORA Y REBLOG--><div class="inferiorsi">
+    <div class="lovesme" title="Love this?"><li class="like-uwu">{LikeButton}<i class="th th-heart-1-o"></i></li></div>
+    <div class="shareme" title="Share this!"><a href="{ReblogURL}"><span class="th th-reblog"></span></a> </div>
+    
+    <div class="moonquienpubl">
+    <div class="quienavatar" style="background-image:url({PortraitURL-128})"></div>
+    <div class="quiennombre"><a href="{PostAuthorURL}">{PostAuthorTitle}</a></div>
+    <div class="informacioncita">
+        {block:HasTags}<div class="infototal info-tags" id="tags9"><span class="th th-link"></span>Tags</div> <div class="tagscontent tagconte9" style="display:none"><div class="hashtagsuwu">{block:Tags}<a href="{TagUrl}">#{Tag}</a>{/block:Tags}</div></div>{/block:HasTags}
+        <div class="infototal info-time"><span class="th th-clock"></span> {block:Date}{ShortMonth} {DayOfMonth} {Year}{/block:Date}</div>
+        <div class="infototal info-notas"><span class="th th-star"></span><a href="{Permalink}">{NoteCount}</a></div>
+    </div>
+    </div>
+    
+</div>
+            
+            </div>
+                {/block:Audio}
+                
+            <!-- FIN DE POST DE AUDIO -->
+            
+        
+        
+         {/block:Posts}
