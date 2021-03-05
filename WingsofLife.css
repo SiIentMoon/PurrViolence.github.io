@@ -1,0 +1,44 @@
+.dreams {width: 500px;min-height: 200px;background: #f3f3f3;margin: 50px auto 0px;position: relative;} 
+.dreams .faith {width: 100%;height: 200px;background: url(https://i.pinimg.com/originals/05/59/94/05599424bb5a1b7819956d0288559697.gif);} 
+.dreams .love {font: 130px Amoret;text-transform: lowercase;display: inline-block;position: absolute;top: 15px;left: 50%;transform: translate(-50%, 0%)} 
+.dreams .luv {font: 10px Calibri; position: absolute;letter-spacing: 5px;top: 50px;left: 50%;transform: translatex(-50%)}
+
+/*Botones*/
+.dreams-botones {position: absolute;bottom: -50px;left: 50%;transform: translatex(-50%)}
+.dreams-botones .pestas {position: absolute;top: -207px;left: -167px;width: 500px;height: 200px;}
+.dreams-botones input { display: none; }
+.dreams-botones input + label { display: inline-block; cursor: pointer;border: 4px solid #f76b84;color: #f76b84;transition: .8s ease;border-radius: 100%}
+
+.dreams-botones input ~ .pestas {transition: .8s ease; visibility: hidden; opacity: 0}
+
+#dboton-1:checked ~ .pestas.dcontenidito1,
+#dboton-2:checked ~ .pestas.dcontenidito2,
+#dboton-3:checked ~ .pestas.dcontenidito3, #dboton-4:checked ~ .pestas.dcontenidito4 { visibility: visible; opacity: 1}
+
+.dreams-botones input:checked + label {color: #bd3a51!important;border-color: #bd3a51;transform: rotate(360deg);border-radius: 100%}
+
+.diconss {width: 30px;height: 30px;position: relative;} 
+
+.diconss .th, .diconss .sf {font-size: 20px;position: absolute; top: 50%;transform: translate(-50%, -50%);left: 50%}
+
+.wing {width: 500px; height: 200px;position: relative;} .wing .sing {width: 150px;height: 150px; object-fit: cover;object-position: 0px 0px; outline: 1px solid #f76b84; outline-offset: 5px;top: 50%;transform: translatey(-50%);position: absolute;left: 20px} .wing .scream {width: 300px;height: calc(200px - 45px);overflow-x: auto; right: 15px;position: absolute;top: 50%;transform: translatey(-50%);column-count: 2;text-align: justify;color: #787878;font: 12px Calibri;}
+
+/*SCROLL*/
+.wing .scream::-webkit-scrollbar-thumb { -webkit-box-shadow: inset 0 1px 1px #; background: transparent!important;width: 1px!important;height: 1px!important;background-color: violet!important} 
+.wing .scream::-webkit-scrollbar { width: 2px;height: 2px!important;border-radius:0px; background-color: transparent!important;}
+/**/
+
+.scream .songs {color: #f76b84;float: left;width: 30px;height: 30px;position: relative;} .scream .songs .th, .scream .songs .sf {font-size: 15px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);animation: movingu 1s infinite} @keyframes movingu {0%{transform: translate(-50%, -50%)}
+  25%{transform: translate(-50%, -60%)}
+  50%{transform: translate(-50%, -50%)}
+  75%{transform: translate(-50%, -40%)}
+  100%{transform: translate(-50%, -50%)}}
+
+.wing .memories {font: 15px Montserrat; font-weight: 900;text-transform: lowercase;position: absolute; right: 15px; top: 2px;color: #f76b84}
+
+.datis {background: #a55858; color: #fefefe;text-align: center;padding: 5px 0px;margin-bottom: px;float: left;width: 145px; margin: 0px 2.5px 5px}
+.datiss {width: calc(145px * 2 + 5px)}
+
+.wing .scream1 {column-count: 1!important}
+
+.wing .scream font {font-weight: bold}
