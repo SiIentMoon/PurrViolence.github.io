@@ -9,7 +9,7 @@
 /*Botones*/
 .dreams-botones {position: absolute;bottom: -50px;left: 50%;transform: translatex(-50%)}
 
-.dreams-botones .pestas {position: absolute;top: -207px;left: -167px;width: 500px;height: 200px;}
+.dreams-botones .pestas {position: absolute;top: -207px;left: -156px;width: 500px;height: 200px;}
 
 .dreams-botones input { display: none; }
 .dreams-botones input + label { display: inline-block; cursor: pointer;border: 4px solid #f76b84;color: #f76b84;transition: .8s ease;border-radius: 100%;width: 30px;height: 30px;position: relative;}
