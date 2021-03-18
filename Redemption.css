@@ -57,10 +57,12 @@
 .minititulos {font-size: 16px;color: var(--moonchild);font-weight: 900;font-style: italic;}
 
 /*MUSICA :V*/
-audio::-webkit-media-controls-panel {background: var(--moonchild);position: absolute;left: -11px;top: 0px;width: 30px; height: 30px;}
+audio::-webkit-media-controls-panel {background: var(--moonchild)!important;position: absolute;left: -11px;top: 0px;width: 30px; height: 30px;}
 audio::-webkit-media-controls-mute-button {}
 audio::-webkit-media-controls-play-button {}
 audio::-webkit-media-controls-timeline-container {visibility: hidden!important}
 audio::-webkit-media-controls-current-time-display {display: none!important}
 audio::-webkit-media-controls-time-remaining-display{display: none!important}
 audio::-webkit-media-controls-timeline {display: none!important}
+
+.moonmusic {width: 30px;overflow: hidden;background: var(--moonchild)!important;height: 30px;position: absolute;border-radius: 100%;bottom: 10px;left: 10px;}
