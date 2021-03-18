@@ -48,7 +48,7 @@
 
 .redemption-datos {display: inline-block;position: absolute;left: 0px;top: 200px}
 
-.lunidato {width: 126px;background: var(--mooncake);float: left;margin-left: 10px;margin-bottom: 5px;padding: 5px 0px;text-align: center;font: 12px Calibri;text-transform: uppercase;font-weight: 900;color: var(--moonchild)}
+.lunidato {width: 126px;background: var(--mooncake);float: left;margin-left: 10px;margin-bottom: 5px;padding: 5px 0px;text-align: center;font: 10px Calibri;text-transform: uppercase;font-weight: 900;color: var(--moonchild)}
 
 .redemption-requiem {width: calc(100% - 40px);height: 180px;position: absolute;top: 150px;left: 50%;transform: translate(-50%, 0%);overflow: auto;padding-right: 5px;text-align: justify;font: 13px Calibri;color: #787878}
 
