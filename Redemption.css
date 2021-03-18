@@ -1,0 +1,57 @@
+:root {--lunito: #16162f;--mooncake: #111122;--moonchild: #444466;--moonbunny: #5b5b98}
+
+/*Botones*/
+.redemption-forme input { display: none;}
+
+.redemption-forme input ~ .moon-tab { visibility: hidden;opacity: 0;}
+
+.moon-tab {width: 280px;height: 350px;position: absolute;top: 0px;left: 0px;overflow: hidden;}
+
+#moon-tabs1:checked ~ .moon-conten1, #moon-tabs2:checked ~ .moon-conten2, #moon-tabs3:checked ~ .moon-conten3, #moon-tabs4:checked ~ .moon-conten4 {visibility: visible;opacity: 1;transition: .6s ease;}
+
+.redemption-forme input + label {width: 50px;height: 50px;background: var(--mooncake);border: 3px solid;display: inline-block;color: var(--moonchild);border-radius: 100%;padding: 0px!important;position: absolute;left: -60px;transition: .6s ease}
+
+.redemption-forme input:checked + label {color: var(--mooncake);background: var(--moonchild)}
+
+.redemption-forme .moon-on {top: 0px}
+.redemption-forme .moon-tw {top: calc(50px + 15px)}
+.redemption-forme .moon-trr {top: calc(50px * 2 + 30px)}
+.redemption-forme .moon-fou {top: calc(50px * 3 + 45px)}
+
+/*Detalle de botones*/
+.moon-icon {position: absolute;top:0px;left: 0px;width: 50px;height: 50px;border-radius: 100%}
+.moon-icon .th, .moon-icon .fas, .moon-icon .game-icon {font-size: 25px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%)}
+/*Tablilla General*/
+.moonlight-base {width: 770px;height: 600px;margin: 50px auto 0px;position: relative}
+
+.moonlight-1 {width: 770px;height: 600px;background: url(https://cdn.discordapp.com/attachments/684222123795152956/806364348137472030/IMG_20210203_002253.jpg);background-size: 100% 100%;background-position: center;position: absolute;top: 0px;left: 0px}
+
+.moonlight-1::before {content:"";width: 900px;height: 100%;background: linear-gradient(0deg, #111122 10%, transparent 100%);position: absolute;left:0px; top: 0px;}
+
+.redemption {;width: 500px; height: 350px;background: var(--lunito);position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%)}
+
+.redemption-Yue {width: 220px;height: 450px;background: url(https://i.imgur.com/Igrhu3o.png);background-size: cover;background-position: center;position: absolute;right: 0px;top: 50%;transform: translate(0%, -50%)}
+
+.redemption-Yue::before {content:"";background: linear-gradient(0deg, #111122 10%, rgba(0,0,0,0.3) 100%);width: 100%; height: 100%
+;position: absolute;left: 0px;top: 0px;}
+
+.redemption-pb {font: 10px Calibri;text-transform: uppercase;letter-spacing: 1px;text-align: center;width: 245px;position: absolute;left: 20px;top: -42px;border-radius: 20px;padding: 10px 0px;font-weight: 600;background: var(--mooncake);color: var(--moonchild)}
+
+.redemption-forme {width: 1px;height: 1px;position: absolute;top: 0px;left: 0px;}
+
+/*Contenidos*/
+.moon-blessed {font: 130px Amoret;text-transform: lowercase;width: 280px;text-align: center;height: 1px;position: absolute;top: 20px;left: 0px;color: var(--moonbunny)}
+
+.blessed1 {font-size: 120px}
+
+.icon-moon1 {font-size: 50px;color: var(--moonchild);position: absolute;top: 20px;left: 50%;transform: translate(-50%, 0%)}
+
+.redemption-datos {display: inline-block;position: absolute;left: 0px;top: 200px}
+
+.lunidato {width: 126px;background: var(--mooncake);float: left;margin-left: 10px;margin-bottom: 5px;padding: 5px 0px;text-align: center;font: 12px Calibri;text-transform: uppercase;font-weight: 900;color: var(--moonchild)}
+
+.redemption-requiem {width: calc(100% - 40px);height: 180px;position: absolute;top: 150px;left: 50%;transform: translate(-50%, 0%);overflow: auto;padding-right: 5px;text-align: justify;font: 13px Calibri;color: #787878}
+
+.redemption-requiem::-webkit-scrollbar-thumb { -webkit-box-shadow: inset 0 1px 1px #; background: var(--moonchild)!important;width: 1px!important;} .redemption-requiem::-webkit-scrollbar { width: 2px;border-radius:0px; background-color: transparent!important;} 
+
+.minititulos {font-size: 16px;color: var(--moonchild);font-weight: 900;font-style: italic;}
