@@ -21,10 +21,5 @@
 @font-face {font-family: Funkturm; src: url('https://dl.dropbox.com/s/d2r58grh1lz9uen/Funkturm.otf'); format('embedded-opentype');}
 
 @font-face {font-family: Morganite; src: url('https://dl.dropbox.com/s/7czyr56fh0zl3jx/._Morganite-Light.ttf'); format('truetype');}
-@font-face {font-family: Morganite; src: url('https://dl.dropbox.com/s/vc35pr74rj1pnbu/._Morganite-LightItalic.ttf'); format('truetype');[font-style: italic]}
-@font-face {font-family: Morganite; src: url('https://dl.dropbox.com/s/5waydd7xy4gwfy8/._Morganite-Medium.ttf'); format('truetype');[font-weight: 300]}
-@font-face {font-family: Morganite; src: url('https://dl.dropbox.com/s/nevi3uvsuanks6w/._Morganite-MediumItalic.ttf'); format('truetype');[font-style: italic];[font-weight: 300]}
-@font-face {font-family: Morganite; src: url('https://dl.dropbox.com/s/ijf80pf5rvcapzf/._Morganite-Bold.ttf'); format('truetype');[font-weight: 600]}
-@font-face {font-family: Morganite; src: url('https://dl.dropbox.com/s/s1ste1h3eibnkrk/._Morganite-BoldItalic.ttf'); format('truetype');[font-weight: 600];[font-style: italic]}
-@font-face {font-family: Morganite; src: url('https://dl.dropbox.com/s/xaurl82p3pe632f/._Morganite-Black.ttf'); format('truetype');[font-weight: 900];[font-style: italic]}
-@font-face {font-family: Morganite; src: url('https://dl.dropbox.com/s/5p6qvjzz9dtxhyu/._Morganite-BlackItalic.ttf'); format('truetype');[font-weight: 900];[font-style: italic]}
+
+@font-face {font-family: Wild Ones; src: url('https://dl.dropbox.com/s/b2oevlcnuu56kke/Wild%20Ones%20Personal%20Use.ttf'); format('truetype');}
